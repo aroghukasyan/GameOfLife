@@ -16,6 +16,7 @@ namespace GameOfLife
         // Draw game process.
         public void DrawField()
         {
+            Console.CursorVisible = false;
             bool isLife = false;
             while (true) 
             {
@@ -42,7 +43,7 @@ namespace GameOfLife
                         else
                         {
                             Matrix.arr[i, j] = 0;
-                            Console.Write(" - ");
+                            Console.Write("   ");
                         }
                     }
                     Console.WriteLine();
