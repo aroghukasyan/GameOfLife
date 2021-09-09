@@ -12,20 +12,13 @@ namespace GameOfLife
             Console.SetCursorPosition(40,10);
             Console.WriteLine("PLAY NOW ? YES - Y, NO - N");
             Console.ResetColor();
-            if (Console.ReadKey().Key == ConsoleKey.Y)
-            {
+
+            if (Console.ReadKey().Key == ConsoleKey.Y) {
                 Game game = new Game();
                 game.DrawField();
-            }
-            else
-            {
+            } else {
                 Environment.Exit(0);
             }
-          
-            //                                how dont work ???
-            //game.body.CellIsDies();
-            //game.body.CellIsAnimate();
-            //game.body.AcceptChanges();
         }
     }
 }
